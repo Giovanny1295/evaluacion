@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--Llamar al css-->
+    <link rel="stylesheet" href="css\style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBIR ARCHIVO CSV</title>
+    <!-- libreria jquery para validar-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- cargar js -->
+	<script src="js/cargar.js"></script>
+</head>
+<body>
+    <!-- contenedor -->
+	<main id="contenedor">
+		<!--Clase formulario -->
+		<section class="formulario">
+			<!--Titulo principal -->
+			<header>
+				<h1>Evaluación para subir archivo CSV</h1>
+			</header>
+			<!--Estructura de subir archivo-->
+			<section>
+				<form name="frmSubirCSV" id="frmSubirCSV" method="post" enctype="multipart/form-data">
+					<!--Insertar imagen de presentación-->
+					<p><img src="imagenes/file.png" alt="" class="imagen"></p>
+					<!--Texto abajo de la imagen-->
+					<h2>Subir archivo CSV</h2>
+					<!--Crear boton para subir archivo-->
+					<p><input type="file" name="archivo_csv" id="archivo_csv"></p>
+					<!--Boton para enviar archivo-->
+					<p><input type="submit" class="enviar_archivo separar_boton" value="Enviar archivo"></p>
+					<div id="estado"></div>
+				</form>
+			</section>
+			<!-- -->
+		</section>
+		<!-- ./Fin de Clase formulario -->
+	</main>
+	<!-- ./Fin de contenedor -->
+</body>
+</html>
